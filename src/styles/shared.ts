@@ -9,7 +9,8 @@ export const Container = styled.div`
 `;
 
 export const Main = styled.main`
-  padding-top: 1rem;
+  padding: 1rem;
+  padding-bottom: 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -26,5 +27,8 @@ export const Title = styled.h1`
   span {
     font-family: "Bad Script", cursive;
     color: #0070f3;
+  }
+  @media (max-width: 768px) {
+    font-size: 2rem;
   }
 `;
