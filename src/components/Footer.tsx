@@ -14,8 +14,8 @@ const FooterText = styled.p`
 const Footer = (): JSX.Element => (
   <FooterContainer>
     <FooterText>
-      Note: DICOM files aren't uploaded anywhere. Validation is done only on the
-      client side.
+      Note: DICOM files are not uploaded anywhere. Validation is done only on
+      the client side.
     </FooterText>
   </FooterContainer>
 );
