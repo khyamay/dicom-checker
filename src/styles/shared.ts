@@ -5,12 +5,11 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  padding: 0 2rem;
+  min-height: calc(100vh - 2rem);
 `;
 
 export const Main = styled.main`
-  padding: 5rem 0;
+  padding-top: 1rem;
   flex: 1;
   display: flex;
   flex-direction: column;

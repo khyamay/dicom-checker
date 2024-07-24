@@ -8,7 +8,7 @@ import {
 } from "@/utils/fileProcessing";
 import { Spinner } from "../Spinner";
 import ResultsDisplay from "./ResultsDisplay";
-import { DropzoneContainer } from "./styles";
+import { DropzoneContainer, ResultsContainer } from "./styles";
 
 const DragAndDrop = (): JSX.Element => {
   const [fileStatuses, setFileStatuses] = useState<FileStatus[]>([]);
@@ -51,7 +51,9 @@ const DragAndDrop = (): JSX.Element => {
         </p>
       </DropzoneContainer>
       {loading && <Spinner />}
-      <ResultsDisplay fileStatuses={fileStatuses} />
+      <ResultsContainer>
+        <ResultsDisplay fileStatuses={fileStatuses} />
+      </ResultsContainer>
     </div>
   );
 };
